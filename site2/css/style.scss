@@ -50,6 +50,7 @@ header {
         border-radius: 1.5rem;
         background: rgb(240, 240, 21);
         color: white;
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.315);
       }
     }
   }
@@ -213,16 +214,20 @@ div.contact {
           margin-bottom: 10px;
           border-radius: 10px;
           background: rgba(206, 206, 206, 0.192);
+          outline: none;
         }
         textarea {
           resize: none;
-          border: none;
+          border: 1px solid rgba(206, 206, 206, 0.363);
+          outline: none;
         }
         input.btn {
           border: none;
           font-size: 3rem;
           color: gray;
           border-radius: 10px;
+          cursor: pointer;
+          margin-top: 1rem;
         }
       }
     }
@@ -326,11 +331,6 @@ div.contact {
   }
   div.prevent div.prevent-todo div img {
     max-width: 35%;
-  }
-}
-@media (max-width:750px){
-  div.about div.about-text {
-    top: 60%;
   }
 }
 @media (max-width:600px){

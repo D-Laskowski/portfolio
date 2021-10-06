@@ -1,17 +1,8 @@
-let menu = document.querySelector('#menu-bar');
 let nav = document.querySelector('.nav');
-
-menu.onclick = () =>{
-    nav.classList.toggle('active');
-}
-
 let section = document.querySelectorAll('.section');
 let navLinks = document.querySelectorAll('header .nav a');
 
 window.onscroll = () =>{
-
-    nav.classList.remove('active');
-
     section.forEach(sec =>{
 
         let top = window.scrollY;
